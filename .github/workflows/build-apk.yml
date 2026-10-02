@@ -1,0 +1,33 @@
+name: Gerar APK Minha Garagem
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar arquivos
+        uses: actions/checkout@v4
+
+      - name: Preparar projeto
+        run: |
+          mkdir projeto
+          unzip -q Minha_Garagem_21_1_BAIXAR_CORRIGIDO.zip -d projeto
+          echo "Arquivos encontrados:"
+          find projeto -maxdepth 3 -type f | head -50
+
+      - name: Dar permissão ao Gradle
+        run: |
+          chmod +x projeto/android_native/gradlew
+
+      - name: Gerar APK
+        working-directory: projeto/android_native
+        run: ./gradlew assembleDebug
+
+      - name: Disponibilizar APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: Minha-Garagem-APK
+          path: projeto/android_native/app/build/outputs/apk/debug/app-debug.apk
