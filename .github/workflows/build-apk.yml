@@ -24,7 +24,7 @@ jobs:
 
       - name: Extrair projeto
         run: |
-          unzip -q Minha_Garagem_22_COMPLETO_COM_WORKFLOW.zip -d projeto
+          unzip -q Minha_Garagem_23_CAMERA.zip -d projeto
 
       - name: Gerar APK
         run: |
@@ -33,6 +33,6 @@ jobs:
       - name: Disponibilizar APK
         uses: actions/upload-artifact@v4
         with:
-          name: Minha-Garagem-APK
+          name: Minha-Garagem-APK-CAMERA
           path: projeto/android_native/app/build/outputs/apk/debug/app-debug.apk
           if-no-files-found: error
