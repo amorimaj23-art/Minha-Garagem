@@ -24,7 +24,7 @@ jobs:
 
       - name: Extrair projeto
         run: |
-          unzip -q Minha_Garagem_23_CAMERA.zip -d projeto
+          unzip -q Minha_Garagem_24_CAMERA_GALERIA.zip -d projeto
 
       - name: Gerar APK
         run: |
