@@ -24,7 +24,7 @@ jobs:
 
       - name: Extrair projeto
         run: |
-          unzip -q Minha_Garagem_26_LAYOUT_CORRIGIDO.zip -d projeto
+          unzip -q Minha_Garagem_27_LAYOUT_MAIS_BAIXO.zip -d projeto
 
       - name: Gerar APK
         run: |
