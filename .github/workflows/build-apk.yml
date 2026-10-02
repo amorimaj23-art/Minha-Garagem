@@ -23,8 +23,8 @@ jobs:
           gradle-version: '8.7'
 
       - name: Extrair projeto
-  run: |
-    unzip -q Minha_Garagem_22_COMPLETO_COM_WORKFLOW.zip -d projeto
+        run: |
+          unzip -q Minha_Garagem_22_COMPLETO_COM_WORKFLOW.zip -d projeto
 
       - name: Gerar APK
         run: |
