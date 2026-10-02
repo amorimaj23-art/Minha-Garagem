@@ -24,7 +24,7 @@ jobs:
 
       - name: Extrair projeto
         run: |
-          unzip -q Minha_Garagem_28_ATALHOS_NO_QUADRADO_CINZA.zip -d projeto
+          unzip -q Minha_Garagem_29_ATALHOS_LADO_OLEO.zip -d projeto
 
       - name: Gerar APK
         run: |
