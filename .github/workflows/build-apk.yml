@@ -24,7 +24,7 @@ jobs:
 
       - name: Extrair projeto
         run: |
-          unzip -q Minha_Garagem_42_LAYOUT_MOCKUP.zip -d projeto
+          unzip -q Minha_Garagem_43_ABAS_INDIVIDUAIS.zip -d projeto
 
       - name: Gerar APK
         run: |
