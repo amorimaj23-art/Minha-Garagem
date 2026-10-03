@@ -24,7 +24,7 @@ jobs:
 
       - name: Extrair projeto
         run: |
-          unzip -q Minha_Garagem_36_BOTOES_DEFINITIVOS.zip -d projeto
+          unzip -q Minha_Garagem_37_ATALHOS_JANELAS.zip -d projeto
 
       - name: Gerar APK
         run: |
